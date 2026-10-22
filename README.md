@@ -2,6 +2,7 @@
 
 Platform: PC
 Development tool: godot
+Art direction: pixelated, sci-fi fantasy.
 
 
 # Initial concept/plan
