@@ -1,3 +1,5 @@
+<img width="1024" height="572" alt="concept_fix" src="https://github.com/user-attachments/assets/9b6afb8e-5466-42ad-b9e1-aca8fa7355ae" />
+[AI-generated conceptual prototype. Subject to massive changes from final product.]
 # StrategemSpiral
 
 Platform: PC
