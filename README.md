@@ -13,4 +13,4 @@ Innovation: speeds up typical turn-based combat to both mechanical skill and on-
 First interaction to test: input system logic
 
 <img width="1024" height="572" alt="concept_fix" src="https://github.com/user-attachments/assets/9b6afb8e-5466-42ad-b9e1-aca8fa7355ae" />
-[AI-generated conceptual prototype. Subject to massive changes from final product.]
+[AI-generated conceptual prototype. Subject to massive changes. NOT finalized UI or build.]
