@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dgldqj8dii38j"]
+
+[ext_resource type="Texture2D" uid="uid://cp4iq5fd6j8be" path="res://art/background.png" id="1_7gynk"]
+[ext_resource type="PackedScene" uid="uid://cxjvgeemnq6t0" path="res://scenes/cardUI/card_ui.tscn" id="2_ffvsa"]
+[ext_resource type="Script" uid="uid://dj82qex2x2hxw" path="res://scenes/ui/hand.gd" id="2_xd4uy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07wxo"]
+size = Vector2(256, 100)
+
+[node name="battle" type="Node2D" unique_id=1554965623]
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=712301287]
+modulate = Color(0.65012825, 0.6501283, 0.65012825, 1)
+texture = ExtResource("1_7gynk")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="cardDropArea" type="Area2D" parent="." unique_id=607216516]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cardDropArea" unique_id=662205247]
+position = Vector2(128, 50)
+shape = SubResource("RectangleShape2D_07wxo")
+
+[node name="BattleUI" type="CanvasLayer" parent="." unique_id=1160700597 groups=["ui_layer"]]
+
+[node name="hand" type="HBoxContainer" parent="BattleUI" unique_id=658743728]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.0
+offset_top = -30.0
+offset_right = 75.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+script = ExtResource("2_xd4uy")
+
+[node name="cardUI" parent="BattleUI/hand" unique_id=495629179 instance=ExtResource("2_ffvsa")]
+layout_mode = 2
+
+[node name="cardUI2" parent="BattleUI/hand" unique_id=275990436 instance=ExtResource("2_ffvsa")]
+layout_mode = 2
+
+[node name="cardUI3" parent="BattleUI/hand" unique_id=593168153 instance=ExtResource("2_ffvsa")]
+layout_mode = 2
