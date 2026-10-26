@@ -2,7 +2,7 @@
 
 Platform: PC\
 Development tool: godot\
-Art direction: pixelated, sci-fi fantasy.\
+Art direction: pixelated\
 \
 CREDITS:\
 GodotGameLab (tutorial videos for what the game is based on)\
