@@ -15,6 +15,10 @@ run/main_scene="uid://dgldqj8dii38j"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://cxo501fgfypxq"
 
+[autoload]
+
+Events="*uid://ip3cb2qe2kbw"
+
 [display]
 
 window/size/viewport_width=256
@@ -40,6 +44,7 @@ right_mouse={
 
 2d_physics/layer_1="cardTargetSelector"
 2d_physics/layer_2="cardDropArea"
+2d_physics/layer_3="enemies"
 
 [physics]
 

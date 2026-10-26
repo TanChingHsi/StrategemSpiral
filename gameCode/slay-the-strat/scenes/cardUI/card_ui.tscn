@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://i7esxsdgko7f" path="res://scenes/cardUI/cardStates/card_clicked_state.gd" id="5_nmso1"]
 [ext_resource type="Script" uid="uid://cf3nmqahg3i48" path="res://scenes/cardUI/cardStates/card_dragging_state.gd" id="6_qy8f5"]
 [ext_resource type="Script" uid="uid://33hfnmjy7d2q" path="res://scenes/cardUI/cardStates/card_released_state.gd" id="7_mesd7"]
+[ext_resource type="Script" uid="uid://03u56ecwgb0e" path="res://scenes/cardUI/card_aiming_state.gd" id="8_nmso1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07wxo"]
 size = Vector2(25, 30)
@@ -72,6 +73,10 @@ state = 2
 [node name="cardReleasedState" type="Node" parent="cardStateMachine" unique_id=320636504]
 script = ExtResource("7_mesd7")
 state = 4
+
+[node name="cardAimingState" type="Node" parent="cardStateMachine" unique_id=1935875379]
+script = ExtResource("8_nmso1")
+state = 3
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
